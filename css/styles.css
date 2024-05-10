@@ -25,15 +25,33 @@ body {
     cursor: pointer;
 }
 
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: 1px solid tomato;
+}
+
 /* font-family: "Italiana", sans-serif; */
 
 /* header */
+.header {
+    padding-top: 56px;
+}
 .nav-list {
     font-weight: 200;
 }
 
 
 /* hero */
+
+.hero {
+    padding-top: 156px;
+    padding-bottom: 36px;
+}
+
 .hero-title {
     font-weight: 200;
     font-size: 70px;
@@ -70,6 +88,13 @@ body {
 
 /* menu */
 
+.menu {
+    padding-top: 21px;
+    padding-bottom: 72px;
+    padding-top: 44px;
+    padding-bottom: 48px;
+}
+
 .menu-title {
     font-weight: 100;
     font-size: 64px;
@@ -88,6 +113,10 @@ body {
 }
 
 /* quality */
+.quality {
+    padding-top: 90px;
+    padding-bottom: 48px;
+}
 .quality-title {
     font-family: "Italiana", sans-serif; 
     font-size: 64px;
@@ -102,6 +131,10 @@ body {
 }
 
 /* why */
+.why {
+    padding-top: 56px;
+    padding-bottom: 52px;
+}
 
 .why-title {
     font-family: "Italiana", sans-serif;
@@ -116,6 +149,11 @@ body {
 }
 
 /* contacts */
+
+.contacts {
+    padding-top: 64px;
+    padding-bottom: 44px;
+}
 
 .contacts-title {
     font-family: "Italiana", sans-serif;
@@ -139,6 +177,10 @@ body {
 }
 
 /* footer */
+.footer {
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
 
 .footer,
 .footer h2 {
