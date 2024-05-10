@@ -41,6 +41,8 @@ body {
     padding-top: 56px;
 }
 .nav-list {
+    display: flex;
+    gap: 30px;
     font-weight: 200;
 }
 
@@ -53,28 +55,63 @@ body {
 }
 
 .hero-title {
+    margin-bottom: 24px;
     font-weight: 200;
     font-size: 70px;
 }
 
 .hero-text {
+    margin-bottom: 48px;
+    width: 570px;
     font-weight: 300;
     font-size: 21px;
 }
 
 .hero-btn {
     padding: 14px 36px;
+    margin-bottom: 124px;
     border-radius: 16px;
     background-color: var(--bg-btn-color);
     font-weight: 300;
     font-size: 24px;
 }
 
+.hero-list {
+    display: flex;
+    gap: 112px;
+    /* justify-content: space-between; */
+}
+
+.hero-list-item {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 224px) / 3);
+    outline: 1px solid #C85312;
+}
+
+.hero-list-item > .thumb {
+    height: 225px;
+    min-width: 200px;
+}
+
+.thumb > img {
+    height: 100%;
+    object-fit: contain;
+    /* object-position: bottom; */
+    object-position: center;
+}
+
+.hero-list-item:first-child img {
+    object-position: center -28px;
+}
+
 .hero-item-info > .price {
+    margin-bottom: 12px;
     font-weight: 200;
 }
 
 .hero-item-info > .name {
+    margin-bottom: 32px;
     font-weight: 500;
     font-size: 16px;  
 }
