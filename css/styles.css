@@ -18,4 +18,145 @@ body {
     background-color: var(--first-background-color);
 }
 
+.btn {
+    color: currentColor;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
 /* font-family: "Italiana", sans-serif; */
+
+/* header */
+.nav-list {
+    font-weight: 200;
+}
+
+
+/* hero */
+.hero-title {
+    font-weight: 200;
+    font-size: 70px;
+}
+
+.hero-text {
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.hero-btn {
+    padding: 14px 36px;
+    border-radius: 16px;
+    background-color: var(--bg-btn-color);
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.hero-item-info > .price {
+    font-weight: 200;
+}
+
+.hero-item-info > .name {
+    font-weight: 500;
+    font-size: 16px;  
+}
+
+.hero-item-info > .btn {
+    padding: 8px 22px;
+    background-color: var(--accent-color);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+/* menu */
+
+.menu-title {
+    font-weight: 100;
+    font-size: 64px;
+}
+
+.menu-item-name {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.menu-item > .btn {
+    padding: 4px 42px;
+    border-radius: 16px;
+    background-color: var(--bg-btn-color);
+    font-weight: 800;
+}
+
+/* quality */
+.quality-title {
+    font-family: "Italiana", sans-serif; 
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.quality-item > ol {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: var(--secondary-background-color);
+    backdrop-filter: blur(36px);
+    font-weight: 500;
+}
+
+/* why */
+
+.why-title {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--secondary-text-color);
+}
+
+.why-item > h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* contacts */
+
+.contacts-title {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.contacts-item > h3 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.contacts-item:first-child > ul {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.contacts-item:last-child > ul {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+/* footer */
+
+.footer,
+.footer h2 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.footer-name {
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.footer-slogan {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.footer-security {
+    font-weight: 100;
+    font-size: 20px;
+}
