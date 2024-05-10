@@ -12,8 +12,10 @@
 body {
     font-family: "Inter", sans-serif;
     color: var(--main-text-color);
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
+    /* letter-spacing: 0.02em; */
     background-color: var(--first-background-color);
 }
+
+/* font-family: "Italiana", sans-serif; */
