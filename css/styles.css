@@ -1,0 +1,19 @@
+:root {
+    --main-heading-color: #FFFFFF;
+    --main-text-color: #FFFFFF;
+    --secondary-text-color: #D9D9D9;
+    --first-background-color: #202023;
+    --secondary-background-color: rgba(242, 242, 242, 0.3);
+    --accent-color: #C85312;
+    --hover-color: #EBAD51;
+    --bg-btn-color: #B47B48;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--main-text-color);
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    background-color: var(--first-background-color);
+}
