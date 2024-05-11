@@ -83,15 +83,31 @@ body {
 }
 
 .hero-list-item {
+    position: relative;
     display: flex;
     align-items: center;
-    width: calc((100% - 224px) / 3);
+    flex-basis: calc((100% - 224px) / 3);
+    padding: 4px 8px;
     outline: 1px solid #C85312;
+}
+
+.hero-list-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(66deg, #000 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.hero-list-item:hover {
+    background-color: var(--hover-color);
 }
 
 .hero-list-item > .thumb {
     height: 225px;
-    min-width: 200px;
+    min-width: 180px;
 }
 
 .thumb > img {
@@ -103,6 +119,10 @@ body {
 
 .hero-list-item:first-child img {
     object-position: center -28px;
+}
+
+.hero-item-info {
+    text-align: center;
 }
 
 .hero-item-info > .price {
@@ -133,11 +153,32 @@ body {
 }
 
 .menu-title {
+    margin-bottom: 20px;
     font-weight: 100;
     font-size: 64px;
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 200px;
+    row-gap: 40px;
+}
+
+.menu-item {
+    flex-basis: 328px;
+    text-align: center;
+}
+
+.menu-item > .thumb {
+    height: 250px;
+    min-width: 328px;
 }
 
 .menu-item-name {
+    margin-bottom: 8px;
     font-weight: 800;
     font-size: 24px;
 }
@@ -151,16 +192,46 @@ body {
 
 /* quality */
 .quality {
+    position: relative;
     padding-top: 90px;
     padding-bottom: 48px;
 }
 .quality-title {
+    position: absolute;
+    left: 640px;
+    top: 80px;
     font-family: "Italiana", sans-serif; 
     font-size: 64px;
     font-weight: 400;
 }
 
+.quality-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    height: 714px;
+}
+
+.quality-item {
+    flex-basis: 320px;
+}
+
+.quality-item > .thumb {
+    width: 320px;
+    height: 320px;
+}
+
+.quality-item:first-child {
+    align-self: flex-start;
+}
+
+.quality-item:last-child {
+    align-self: flex-end;
+}
+
 .quality-item > ol {
+    padding: 36px 8px 36px 36px;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
     background: var(--secondary-background-color);
     backdrop-filter: blur(36px);
@@ -174,10 +245,17 @@ body {
 }
 
 .why-title {
+    margin-bottom: 120px;
     font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-size: 48px;
     color: var(--secondary-text-color);
+}
+
+.why-list {
+    display: flex;
+    gap: 176px;
+    justify-content: center;
 }
 
 .why-item > h3 {
