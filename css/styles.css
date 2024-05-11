@@ -53,7 +53,7 @@ footer {
 }
 
 .nav-list a {
-    transition: text-decoration 500ms linear, transform 500ms ease-in-out;
+    transition: text-decoration 500ms ease-in-out;
 }
 
 .nav-list a:hover {
@@ -91,7 +91,7 @@ footer {
     background-color: var(--bg-btn-color);
     font-weight: 300;
     font-size: 24px;
-    transition: background-color 500ms linear, transform 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .hero-btn:hover {
@@ -163,7 +163,7 @@ footer {
     background-color: var(--accent-color);
     font-weight: 900;
     font-size: 16px;
-    transition: background-color 500ms linear, transform 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .hero-item-info > .btn:hover {
@@ -215,7 +215,7 @@ footer {
     border-radius: 16px;
     background-color: var(--bg-btn-color);
     font-weight: 800;
-    transition: background-color 500ms linear, transform 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .menu-item > .btn:hover {
@@ -433,7 +433,7 @@ footer {
 }
 
 .footer a {
-    transition: color 500ms linear, transform 500ms ease-in-out;
+    transition: color 500ms ease-in-out;
 }
 
 .footer a:hover {
