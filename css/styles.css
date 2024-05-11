@@ -14,7 +14,6 @@ body {
     color: var(--main-text-color);
     font-size: 24px;
     line-height: 1.2;
-    /* letter-spacing: 0.02em; */
     background-color: var(--first-background-color);
 }
 
@@ -31,7 +30,6 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    outline: 1px solid tomato;
 }
 
 section,
@@ -230,6 +228,12 @@ footer {
     position: relative;
     padding-top: 90px;
     padding-bottom: 48px;
+    background-image: url(../images/bg-q3.png),linear-gradient(
+        rgba(32, 32, 35, 0.5), 
+        rgba(32, 32, 35, 0.5)
+    ), url(../images/bg-q2.png), url(../images/bg-q1.png);
+    background-repeat: no-repeat;
+    background-position: 820px bottom, 0px 0px, center bottom, 0px bottom, 840px bottom;
 }
 .quality-title {
     position: absolute;
