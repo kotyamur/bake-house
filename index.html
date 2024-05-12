@@ -40,7 +40,7 @@
                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap into electronic typesetting, remaining essentially unchanged.
                 </p>
-                <button type="button" class="hero-btn btn">SHOP NOW</button>
+                <button type="button" class="hero-btn btn" data-modal-open>SHOP NOW</button>
 
                 <ul class="hero-list">
                     <li class="hero-list-item">
@@ -242,6 +242,44 @@
         </div>
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-icon btn" data-modal-close>x</button>
+            <p class="modal-title">
+                TRADITIONAL <br>ARTISAX BAKERY
+            </p>
+            <form class="modal-form" autocomplete="off">
+                <div class="modal-field">
+                    <input name="name" class="modal-input" type="text" id="user-adress">
+                    <label class="modal-label" for="user-adress">Your  adress</label>
+                </div>
+                <div class="modal-field">
+                    <input name="name" class="modal-input" type="text" id="user-card">
+                    <label class="modal-label" for="user-card">Your card</label>
+                </div>
+                
+                <button type="submit" class="btn modal-btn">SHOP NOW</button>
+            </form>
+        </div>
+    </div>
 </body>
+<script>
+    (() => {
+    const refs = {
+      openModalBtn: document.querySelector("[data-modal-open]"),
+      closeModalBtn: document.querySelector("[data-modal-close]"),
+      modal: document.querySelector("[data-modal]"),
+      body: document.querySelector("body"),
+    };
+  
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+      refs.body.classList.toggle("no-scroll");
+    }
+  })();
+</script>
 
 </html>
