@@ -251,13 +251,13 @@
             <p class="modal-title">
                 TRADITIONAL <br>ARTISAX BAKERY
             </p>
-            <form class="modal-form" autocomplete="off">
+            <form class="modal-form" autocomplete="off" submit-form>
                 <div class="modal-field">
-                    <input name="name" class="modal-input" type="text" id="user-adress" placeholder="Your  adress" required minlength="3">
+                    <input name="userAdress" class="modal-input" type="text" id="user-adress" placeholder="Your  adress" required minlength="3">
                     <label class="modal-label" for="user-adress">Your  adress</label>
                 </div>
                 <div class="modal-field">
-                    <input name="name" class="modal-input" type="text" id="user-card" placeholder="Your card" required minlength="16">
+                    <input name="userCard" class="modal-input" type="text" id="user-card" placeholder="Your card" required minlength="6" manlength="16">
                     <label class="modal-label" for="user-card">Your card</label>
                 </div>
                 
@@ -273,14 +273,25 @@
       closeModalBtn: document.querySelector("[data-modal-close]"),
       modal: document.querySelector("[data-modal]"),
       body: document.querySelector("body"),
+      form: document.querySelector("[submit-form]"),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.form.addEventListener("submit", handleSubmit);
   
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
       refs.body.classList.toggle("no-scroll");
+    }
+    function handleSubmit(event) {
+        event.preventDefault();
+        const {
+            elements: { userAdress, userCard }
+        } = event.currentTarget;
+        console.log(`userAdress: ${userAdress.value}`, `userCard: ${userCard.value}`);
+        toggleModal();
     }
   })();
 </script>
