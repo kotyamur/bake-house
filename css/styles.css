@@ -9,6 +9,10 @@
     --bg-btn-color: #B47B48;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter", sans-serif;
     color: var(--main-text-color);
