@@ -461,7 +461,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99;
+    z-index: 9;
     overflow-y: auto;
     visibility: visible;
     opacity: 1;
