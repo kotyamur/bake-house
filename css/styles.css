@@ -476,9 +476,9 @@ footer {
     visibility: hidden;
 }
 
-.no-scroll {
+/* .no-scroll {
     overflow: hidden;
-}
+} */
 
 .modal {
     position: relative;
