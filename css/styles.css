@@ -484,6 +484,7 @@ footer {
     width: 990px;
     padding: 94px 86px;
     border-radius: 50px;
+    z-index: 9;
     background-color: #FFFFFF;
     background-image: url(../images/pan.png);
     background-repeat: no-repeat;
